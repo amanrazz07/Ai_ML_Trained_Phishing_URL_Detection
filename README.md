@@ -63,86 +63,7 @@ The system analyzes URLs based on 25+ advanced factors for 99.5% accuracy:
 25. **Maximum Accuracy**: Industry-leading 99.5% detection rate
 20. **Real-time Updates**: Dynamic threat intelligence
 
-## Installation & Setup
 
-### Prerequisites
-* Node.js (v18 or higher)
-* npm or yarn
-* Vercel CLI (for deployment)
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd phishguard-ai
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run locally with Vercel**
-   ```bash
-   npx vercel dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-### Deployment to Vercel (Free Hosting)
-
-1. **Install Vercel CLI**
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Login to Vercel**
-   ```bash
-   vercel login
-   ```
-
-3. **Deploy the project**
-   ```bash
-   vercel --prod
-   ```
-
-4. **Your app will be live at**: `https://your-project-name.vercel.app`
-
-## API Usage
-
-### Analyze URL Endpoint
-
-**POST** `/api/analyze`
-
-**Request Body:**
-```json
-{
-  "url": "https://example.com"
-}
-```
-
-**Response:**
-```json
-{
-  "url": "https://example.com",
-  "isPhishing": false,
-  "confidence": 15,
-  "features": [
-    {
-      "name": "Suspicious Keywords",
-      "description": "No suspicious keywords detected",
-      "risk": "low"
-    }
-  ],
-  "recommendations": [
-    "This URL appears to be safe to visit",
-    "Always verify the website is legitimate before entering sensitive information"
-  ],
-  "timestamp": "2024-01-01T00:00:00.000Z"
-}
-```
 
 ## Project Structure
 
@@ -165,27 +86,5 @@ phishguard-ai/
 * No sensitive data is stored or logged
 * Rate limiting can be implemented for production use
 * The system is designed to be privacy-focused
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support or questions, please open an issue in the repository.
-
-## Disclaimer
-
-This tool is for educational and informational purposes. While it uses advanced algorithms to detect phishing attempts, it should not be the only security measure. Always exercise caution when visiting unknown websites and use additional security tools as needed.
-
----
 
 **Made with ❤️ for cybersecurity awareness**
